@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f4efe4;
+  --ink: #1d2b24;
+  --moss: #2f6a4a;
+  --moss-deep: #1c3d2d;
+  --clay: #c45c26;
+  --card: #fffdf8;
+  --line: #d9d0c0;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-moss: var(--moss);
+  --color-moss-deep: var(--moss-deep);
+  --color-clay: var(--clay);
+  --color-card: var(--card);
+  --color-line: var(--line);
+  --font-sans: var(--font-be-vietnam);
+  --font-display: var(--font-fraunces);
+}
+
+html {
+  background: var(--paper);
+}
+
+body {
+  background:
+    radial-gradient(1200px 500px at 10% -10%, #e7f0e4 0%, transparent 55%),
+    radial-gradient(900px 400px at 100% 0%, #f6e4d4 0%, transparent 50%),
+    var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans), sans-serif;
+}
+
+a {
+  color: inherit;
+}
